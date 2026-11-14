@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Белес — вкусно, уютно, по-домашнему | Астана</title>
+<meta name="description" content="Белес в Астана. Готовим из свежих продуктов. Заходите на обед или ужин — всегда рады.">
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  html { scroll-behavior: smooth; }
+  .btn { transition: all .2s; }
+  .btn:hover { transform: translateY(-2px); }
+  .accent { color: #ea580c; }
+  .bg-accent { background: #ea580c; }
+  .soft { background: #fff7ed; }
+</style>
+</head>
+<body class="font-sans text-slate-800">
+
+<header class="fixed top-0 w-full bg-white/90 backdrop-blur border-b z-50">
+  <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+    <div class="font-bold text-xl">Белес</div>
+    <nav class="hidden md:flex gap-6 text-sm">
+      <a href="#services" class="hover:opacity-70">Услуги</a>
+      <a href="#about" class="hover:opacity-70">О нас</a>
+      <a href="#contacts" class="hover:opacity-70">Контакты</a>
+    </nav>
+    <a href="#form" class="btn bg-accent text-white px-5 py-2 rounded-lg text-sm font-medium">Записаться</a>
+  </div>
+</header>
+
+<section class="pt-32 pb-20 soft">
+  <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+    <div>
+      <div class="accent text-sm font-bold tracking-widest mb-4">АСТАНА</div>
+      <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">Вкусно, уютно, по-домашнему</h1>
+      <p class="text-lg text-slate-600 mb-8">Готовим из свежих продуктов. Заходите на обед или ужин — всегда рады.</p>
+      <div class="flex gap-4">
+        <a href="#form" class="btn bg-accent text-white px-8 py-4 rounded-xl font-semibold">Записаться онлайн</a>
+        <a href="#services" class="btn border border-slate-300 px-8 py-4 rounded-xl font-semibold">Услуги и цены</a>
+      </div>
+    </div>
+    <div class="rounded-2xl aspect-video flex items-center justify-center text-6xl" style="background:#fff7ed">
+      ☕
+    </div>
+  </div>
+</section>
+
+<section id="services" class="py-20">
+  <div class="max-w-6xl mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-12">Услуги</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="border rounded-2xl p-8 hover:shadow-lg transition">
+        <div class="text-3xl mb-4">☕</div>
+        <h3 class="font-bold text-xl mb-3">Завтраки</h3>
+        <p class="text-slate-600 mb-4">Сытные завтраки с 8:00 до 12:00.</p>
+        <div class="font-bold" style="color:#ea580c">от 350 ₽</div>
+      </div>
+
+      <div class="border rounded-2xl p-8 hover:shadow-lg transition">
+        <div class="text-3xl mb-4">☕</div>
+        <h3 class="font-bold text-xl mb-3">Бизнес-ланч</h3>
+        <p class="text-slate-600 mb-4">Комплексный обед по будням.</p>
+        <div class="font-bold" style="color:#ea580c">от 450 ₽</div>
+      </div>
+
+      <div class="border rounded-2xl p-8 hover:shadow-lg transition">
+        <div class="text-3xl mb-4">☕</div>
+        <h3 class="font-bold text-xl mb-3">Ужины</h3>
+        <p class="text-slate-600 mb-4">Горячие блюда, десерты, напитки.</p>
+        <div class="font-bold" style="color:#ea580c">от 500 ₽</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="py-20 soft">
+  <div class="max-w-4xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold mb-6">Почему выбирают нас</h2>
+    <div class="grid md:grid-cols-2 gap-6 text-left mt-10">
+      <div class="bg-white p-6 rounded-xl"><b>✓ Опытные мастера</b><p class="text-slate-600 mt-2">Работаем аккуратно и по вашим пожеланиям.</p></div>
+      <div class="bg-white p-6 rounded-xl"><b>✓ Честные цены</b><p class="text-slate-600 mt-2">Цена фиксируется до начала работы.</p></div>
+      <div class="bg-white p-6 rounded-xl"><b>✓ Удобное расположение</b><p class="text-slate-600 mt-2">Астана</p></div>
+      <div class="bg-white p-6 rounded-xl"><b>✓ Запись онлайн</b><p class="text-slate-600 mt-2">Оставьте заявку — подтвердим время.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="form" class="py-20 bg-accent text-white">
+  <div class="max-w-xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-bold mb-4">Запишитесь онлайн</h2>
+    <p class="mb-8 opacity-90">Оставьте заявку — свяжемся в течение 15 минут</p>
+    <form class="space-y-4" onsubmit="sendForm(event)">
+      <input required name="name" placeholder="Ваше имя" class="w-full px-5 py-4 rounded-xl text-slate-800">
+      <input required name="phone" type="tel" placeholder="Телефон" class="w-full px-5 py-4 rounded-xl text-slate-800">
+      <button class="btn w-full bg-slate-900 py-4 rounded-xl font-semibold">Отправить</button>
+    </form>
+    <p id="ok" class="hidden mt-4 bg-green-500 py-3 rounded-xl">Заявка отправлена!</p>
+  </div>
+</section>
+
+<footer id="contacts" class="py-12 bg-slate-900 text-slate-400">
+  <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8">
+    <div><b class="text-white">Белес</b><p class="mt-2">Астана</p></div>
+    <div><b class="text-white">Телефон</b><p class="mt-2">+7 (___) ___-__-__</p></div>
+    <div><b class="text-white">Город</b><p class="mt-2">Астана</p></div>
+  </div>
+  <div class="text-center mt-8 text-sm">© 2026 Белес. Все права защищены.</div>
+</footer>
+
+<script>
+function sendForm(e) {
+  e.preventDefault();
+  document.getElementById('ok').classList.remove('hidden');
+  e.target.reset();
+}
+</script>
+</body>
+</html>
